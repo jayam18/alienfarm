@@ -5,15 +5,14 @@ block title
     table.table.table-striped
       thead
         tr
-         th name
-         th photo
-         th Planet
-            tbody
-              each alien in aliens
-                tr
-                  td
-                    a(href='/aliens/' + alien.id) = alien.name
-                  td
-                    img.img-responsive-thumbnail(src='image.photo')
-                  td
-                    imp.imp-responsive.thunbnail(src='image.planet')
+          th name
+          th photo
+          th Planet
+      tbody
+         tr
+            td
+              a(href='/aliens/' + alien.id) = alien.name
+            td
+              img.img-responsive-thumbnail.alien(src='http://necaonline.com/wp-content/uploads/2014/02/1300w-Alien-Dog.jpg')
+            td
+              imp.imp-responsive.thunbnail.alien(src='http://necaonline.com/wp-content/uploads/2014/02/1300w-Alien-Dog.jpg')
