@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Alien Farm
+    link(rel='stylesheet', href='fa/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+
+  body
+    .container
+      .row
+        .col-xs-6
+        .col-xs-6
+          block title
+          include nav
+      .row
+        .col-xs-6
+        .col-xs-6
+          block content
+
+    script(src='jquery-2.2.4.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')

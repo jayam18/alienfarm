@@ -1,0 +1,17 @@
+extends ../shared/template
+block title
+  h1 New
+block content
+  p This is about new Alien enrollment
+  form(action='/aliens', method='POST')
+    .form-group
+      label Name
+      input.form-control(type='text', name='alien', placeholder='Alien name')
+    .form-group
+      label Planet
+      input.form-control(type='text', name='planet', placeholder='Planet name')
+    .form-group
+      label Photo
+      input.form-control(type='text', name='photo', placeholder='link to photo')
+    .form-group
+          button.btn.btn-primary(type='submit') Submit

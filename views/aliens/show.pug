@@ -1,0 +1,19 @@
+extends ../shared/template
+block title
+  h1 Show Alien
+  block content
+    table.table.table-striped
+      thead
+        tr
+         th name
+         th photo
+         th Planet
+            tbody
+              each alien in aliens
+                tr
+                  td
+                    a(href='/aliens/' + alien.id) = alien.name
+                  td
+                    img.img-responsive-thumbnail(src='image.photo')
+                  td
+                    imp.imp-responsive.thunbnail(src='image.planet')
